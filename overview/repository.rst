@@ -45,10 +45,10 @@ The following table describes how are organized the :ref:`modules natures <modul
      - Add-On Library
 
 
-Javadoc
--------
+Java APIs (Javadoc)
+-------------------
 
-To consult the APIs documentation (Javadoc) of all :ref:`libraries <libraries>` available in the repository, please visit `<https://repository.microej.com/javadoc/microej_5.x/apis/>`_.
+To consult the Java APIs documentation (Javadoc) of all :ref:`libraries <libraries>` available in the repository, please visit `<https://repository.microej.com/javadoc/microej_5.x/apis/>`_.
 
 ..
    | Copyright 2008-2020, MicroEJ Corp. Content in this space is free 
