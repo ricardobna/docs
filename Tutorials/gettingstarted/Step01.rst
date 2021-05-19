@@ -12,27 +12,30 @@ MicroUI
            <dependency org="ej.api" name="microui" rev="3.0.3"/>       
        </dependencies>
 
-       ℹ️ There's no need for explicitly adding EDC, as a dependency for
+   .. note::
+
+       There's no need for explicitly adding EDC, as a dependency for
        the MicroUI library, it will be automatically resolved with the
        correct version.
 
 -  This call initializes the MicroUI framework and starts the UI Thread,
    which manages the user input and display events.
 
-   .. code:: guess
+   .. code:: java
 
        public static void main(String[] args) {
            MicroUI.start();
        }
+   .. note:: 
 
-    ℹ️ MicroUI have to be started before any UI operations
+     MicroUI have to be started before any UI operations
 
 -  To run your code on the simulator, left click on the Project Go To
-   **Run>Run As>MicroEJ Application> Select the device you added** >
+   **Run>Run As>MicroEJ Application> Select the device you added**
    |image0|
 
 Widgets
-=======
+-------
 
 -  The widget library provides a collection of common widgets and
    containers. It is based on MWT, a base library that defines core
@@ -46,9 +49,14 @@ Widgets
            <dependency org="ej.library.ui" name="widget" rev="3.1.1" />
        </dependencies>
 
-       ℹ️ There's no need for explicitly adding MWT or MicroUI, as both
+   .. note::
+
+       There's no need for explicitly adding MWT or MicroUI, as both
        are dependencies for the Widget library, they will be
-       automatically resolved with the correct version. ## Desktop
+       automatically resolved with the correct version. 
+       
+Desktop
+-------
 
 -  A desktop is the top-level object that can be displayed on a Display.
    It may contain only a single widget, and at most one desktop is shown
@@ -58,12 +66,12 @@ Widgets
 
    .. code:: java
 
-       public static void main(String[] args) {
-           MicroUI.start();
+    public static void main(String[] args) {
+        MicroUI.start();
 
-       Desktop desktop = new Desktop();
-       desktop.requestShow();
-       }
+        Desktop desktop = new Desktop();
+        desktop.requestShow();
+    }
 
 Displaying a Label
 ------------------
@@ -73,23 +81,18 @@ Displaying a Label
 
    .. code:: java
 
-       public static void main(String[] args) {
-           MicroUI.start();
-           Desktop desktop = new Desktop();
+    public static void main(String[] args) {
+        MicroUI.start();
+        Desktop desktop = new Desktop();
 
-       Label label = new Label("Hello World");
-       desktop.setWidget(label);
+        Label label = new Label("Hello World");
+        desktop.setWidget(label);
 
-       desktop.requestShow();
-       }
+        desktop.requestShow();
+    }
 
-       .. figure:: images/hello.png
-          :alt: 
+   |image1|
 
-Previous
-~~~~~~~~
 
-Next
-~~~~
-
-.. |image0| image:: images/simulator.png
+.. |image0| image:: simulator.png
+.. |image1| image:: hello.png

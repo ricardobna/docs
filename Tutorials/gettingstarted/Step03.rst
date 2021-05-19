@@ -7,8 +7,10 @@ Style
 -  The Style API (ej.mwt.style) defines style options for widgets,
    allowing for a clear separation of the core structure (content) and
    the design aspects (colors, fonts, margin, padding, background,
-   etc.). > ℹ️ Some of the attributes are inspired by CSS, like
-   Background,Border, Color, Dimension, Font, Alignment,Margin/Padding
+   etc.).
+   
+   .. note::
+    Some of the attributes are inspired by CSS, like Background,Border, Color, Dimension, Font, Alignment,Margin/Padding
 
 Selectors
 ---------
@@ -17,8 +19,13 @@ Selectors
 
    -  Simple selectors (based on type,Class)
    -  Combinators (base on relationships)
-   -  State Selectors (based on state) > ℹ️ More of this will be
-      presented at the Advanced Styling step ### Usage
+   -  State Selectors (based on state) 
+
+   .. note::
+    More of this will be presented at the Advanced Styling step 
+
+Usage
+`````
 
 -  Using a CascadingStylesheet, we can define a base style for all
    labels using a TypeSelector:
@@ -68,8 +75,7 @@ Selectors
        desktop.requestShow();
        }
 
-   .. figure:: images/styleborder.png
-      :alt: 
+   |image2| 
 
 Padding and Margin
 ~~~~~~~~~~~~~~~~~~
@@ -88,7 +94,9 @@ Padding and Margin
 
            style.setPadding(new UniformOutline(2));
 
-   |image1| ### Previous ### Next
+   |image1|
 
-.. |image0| image:: images/margin.png
-.. |image1| image:: images/marginandpadding.png
+
+.. |image0| image:: margin.png
+.. |image1| image:: marginandpadding.png
+.. |image2| image:: styleborder.png

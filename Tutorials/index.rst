@@ -16,7 +16,7 @@ Tutorials
    tutorialExploreDataSerializationFormats
    tutorialInstrumentJavaCodeForLogging
    tutorialRunATestSuiteOnDevice
-   totalcross/index
+   gettingstarted/index
 
 ..
    | Copyright 2008-2020, MicroEJ Corp. Content in this space is free 

@@ -1,7 +1,7 @@
-.. _totalcross:
+.. _gettingstarted:
 
-Totalcross
-==========
+Getting Started
+===============
 
 .. toctree::
    :maxdepth: 1
@@ -18,6 +18,7 @@ Totalcross
    Step09
    Step10
    Step11
+   Step12
 
 ..
    | Copyright 2008-2020, MicroEJ Corp. Content in this space is free 

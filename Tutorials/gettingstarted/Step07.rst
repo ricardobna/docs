@@ -1,6 +1,3 @@
-Step 7
-======
-
 Basic drawing/Drawing on screen
 ===============================
 
@@ -28,22 +25,31 @@ Basic drawing/Drawing on screen
     Display.getDisplay().requestShow(myDisplayable);
 
 -  This should draw a line from the coordinates of the display (0,0) and
-   going to (100,50) > |image0| ### Geometric objects
+   going to (100,50) 
+   
+   |image0|
+ 
+Geometric objects
+-----------------
+
 -  it's possible to also draw geometric objects using Displayable
 
    .. code:: java
 
-           g.setColor(Colors.YELLOW);
-           Painter.drawLine(g, 0, 0, 100, 50);
+       g.setColor(Colors.YELLOW);
+       Painter.drawLine(g, 0, 0, 100, 50);
 
-           g.setColor(Colors.PURPLE);
-           Painter.fillRectangle(g, 10, 20, 100, 20);
-           Painter.fillEllipse(g, 120, 50, 20, 100);
+       g.setColor(Colors.PURPLE);
+       Painter.fillRectangle(g, 10, 20, 100, 20);
+       Painter.fillEllipse(g, 120, 50, 20, 100);
 
-           g.setColor(Colors.GREEN);
-           Painter.drawCircle(g, 50, 50, 100);
+       g.setColor(Colors.GREEN);
+       Painter.drawCircle(g, 50, 50, 100);
 
-       |image1| ### Images can also be set
+   |image1|
+       
+Images can also be set
+----------------------
 
 -  Adding the image as shown in step 3
 
@@ -53,23 +59,25 @@ Basic drawing/Drawing on screen
        // draws the image at x,y coordinates (50, 50).
        Painter.drawImage(g, image, 150, 50);
 
-   |image2| ### Drawing Thick Shapes
--  Drawing thick shapes it's very straight forward \`\`\` Main.java //
-   draws a thick yellow line. g.setColor(Colors.YELLOW);
-   ShapePainter.drawThickFadedLine(g, 20, 20, 100, 80, 10, 6,
-   Cap.ROUNDED, Cap.PERPENDICULAR);
+   |image2|
 
-// draws a thick green circle. g.setColor(Colors.GREEN);
-ShapePainter.drawThickFadedCircle(g, 130, 20, 100, 20, 2); \`\`\`
-|image3|
+Drawing Thick Shapes
+--------------------
 
-Previous
-~~~~~~~~
+-  Drawing thick shapes it's very straight forward 
 
-Next
-~~~~
+   .. code:: java
 
-.. |image0| image:: images/drawline.PNG
-.. |image1| image:: images/geometry.png
-.. |image2| image:: images/imagedrawable.png
-.. |image3| image:: images/thickshapes.png
+       //draws a thick yellow line. 
+       g.setColor(Colors.YELLOW);
+       ShapePainter.drawThickFadedLine(g, 20, 20, 100, 80, 10, 6, Cap.ROUNDED, Cap.PERPENDICULAR);
+
+       // draws a thick green circle. g.setColor(Colors.GREEN);
+       ShapePainter.drawThickFadedCircle(g, 130, 20, 100, 20, 2);
+
+   |image3|
+
+.. |image0| image:: drawline.PNG
+.. |image1| image:: geometry.png
+.. |image2| image:: imagedrawable.png
+.. |image3| image:: thickshapes.png

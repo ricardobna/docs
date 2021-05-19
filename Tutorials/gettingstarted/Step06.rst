@@ -1,8 +1,9 @@
 Event Handling
 ==============
 
-Events are handled in the same \* Using the code created on the Last
-Step, it's possible to simply add the onClick Listener
+Events are handled in the same 
+
+- Using the code created on the Last Step, it's possible to simply add the onClick Listener
 
 .. code:: java
 
@@ -27,10 +28,3 @@ This should be shown in the console
     Clicked!
     Clicked!
     Clicked!
-
-Previous
-~~~~~~~~
-
-Next
-~~~~
-

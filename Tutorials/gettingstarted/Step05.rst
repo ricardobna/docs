@@ -7,7 +7,11 @@ Imaging with stylesheets
 -  It's possible to set images as styles, using on a button for example
 -  Since we are going to set the image as background on only one button,
    We need to use a class select, which it's an Integer that relates to
-   the Button ### Class Selector
+   the Button
+
+Class Selector
+--------------
+
 -  Just like a class on CSS, it associates to every element that are
    from the same class
 -  Creating a class for button for example
@@ -61,32 +65,27 @@ Imaging with stylesheets
        }
        }
 
-   .. figure:: images/imagebackgroundexample.png
-      :alt: 
+   |image0| 
 
 Combinator and Conditional style
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 -  It's possible to combine two or more Classes using a combinator
 -  In this example the active state of the Button will turn the text red
-   \`\`\` Main.java CascadingStylesheet css = new CascadingStylesheet();
-   Selector imageButton = new ClassSelector(BUTTON); EditableStyle style
-   = css.getSelectorStyle(imageButton); style.setBackground(new
-   ImageBackground(Image.getImage("/images/mj.png")));
 
-Selector activeSelector = new StateSelector(Button.ACTIVE);
-EditableStyle styleActive = css.getSelectorStyle(new
-AndCombinator(imageButton, activeSelector));
-styleActive.setColor(Colors.RED); \`\`\` > instead of directly
-insantiating classSelector in the get selector style, The ClassSelector
-has been exposed to be combined with the ButtonActive selector
+   .. code:: java
 
-.. figure:: images/classselectorexample.png
-   :alt: 
+       CascadingStylesheet css = new CascadingStylesheet();
+       Selector imageButton = new ClassSelector(BUTTON); 
+       EditableStyle style = css.getSelectorStyle(imageButton);
+       style.setBackground(new ImageBackground(Image.getImage("/images/mj.png")));
+       Selector activeSelector = new StateSelector(Button.ACTIVE);
+       EditableStyle styleActive = css.getSelectorStyle(new AndCombinator(imageButton, activeSelector));
+       styleActive.setColor(Colors.RED);  
 
-Previous
-~~~~~~~~
+- Instead of directly instantiating classSelector in the get selector style, The ClassSelector has been exposed to be combined with the ButtonActive selector
 
-Next
-~~~~
+    |image1|
 
+.. |image0| image:: imagebackgroundexample.png
+.. |image1| image:: classselectorexample.png
