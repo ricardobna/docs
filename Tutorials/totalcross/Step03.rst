@@ -1,0 +1,94 @@
+Style
+=====
+
+-  Instances of Desktop, Widget, and Container classes are semantic
+   elements of the GUI, describing the structure and meaning of the
+   content.
+-  The Style API (ej.mwt.style) defines style options for widgets,
+   allowing for a clear separation of the core structure (content) and
+   the design aspects (colors, fonts, margin, padding, background,
+   etc.). > ℹ️ Some of the attributes are inspired by CSS, like
+   Background,Border, Color, Dimension, Font, Alignment,Margin/Padding
+
+Selectors
+---------
+
+-  Define the widget which the style is going to be applied
+
+   -  Simple selectors (based on type,Class)
+   -  Combinators (base on relationships)
+   -  State Selectors (based on state) > ℹ️ More of this will be
+      presented at the Advanced Styling step ### Usage
+
+-  Using a CascadingStylesheet, we can define a base style for all
+   labels using a TypeSelector:
+
+   .. code:: java
+
+       CascadingStylesheet css = new CascadingStylesheet();
+       EditableStyle style = css.getSelectorStyle(new TypeSelector(Label.class));
+
+-  We can now change the style object options, in this sample, changing
+   the base color to red and adding a black rectangular border of 1px
+   thickness.
+
+   .. code:: java
+
+       style.setColor(Colors.RED);
+       style.setBorder(new RectangularBorder(Colors.BLACK, 1));
+
+-  For these options to take effect, the desktop must have its
+   stylesheet set.
+
+   .. code:: java
+
+       desktop.setStylesheet(css);
+
+-  The final code should look like this
+
+   .. code:: java
+
+       public static void main(String[] args) {
+           MicroUI.start();
+           Desktop desktop = new Desktop();
+           Label label = new Label("Hello World");
+           Label label2 = new Label("Hello World 2");
+
+       Canvas canvas = new Canvas();
+       canvas.addChild(label, 0, 0, Widget.NO_CONSTRAINT, Widget.NO_CONSTRAINT);
+       canvas.addChild(label2, 0, 15, Widget.NO_CONSTRAINT, Widget.NO_CONSTRAINT);
+
+       CascadingStylesheet css = new CascadingStylesheet();
+       EditableStyle style = css.getSelectorStyle(new TypeSelector(Label.class));
+       style.setColor(Colors.RED);
+       style.setBorder(new RectangularBorder(Colors.BLACK, 1));
+
+       desktop.setStylesheet(css);
+       desktop.setWidget(canvas);
+       desktop.requestShow();
+       }
+
+   .. figure:: images/styleborder.png
+      :alt: 
+
+Padding and Margin
+~~~~~~~~~~~~~~~~~~
+
+-  Using margin and padding its pretty simple, Adding padding to the
+   Device is just like
+
+   .. code:: java
+
+           style.setMargin(new UniformOutline(4));
+
+   |image0|
+-  Adding padding
+
+   .. code:: java
+
+           style.setPadding(new UniformOutline(2));
+
+   |image1| ### Previous ### Next
+
+.. |image0| image:: images/margin.png
+.. |image1| image:: images/marginandpadding.png

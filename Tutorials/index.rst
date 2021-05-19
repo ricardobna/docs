@@ -4,7 +4,7 @@ Tutorials
 =========
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 4
 
    tutorialUnderstandMicroEJFirmwareBuild
    tutorialCreateCustomPlatform
@@ -16,6 +16,7 @@ Tutorials
    tutorialExploreDataSerializationFormats
    tutorialInstrumentJavaCodeForLogging
    tutorialRunATestSuiteOnDevice
+   totalcross/index
 
 ..
    | Copyright 2008-2020, MicroEJ Corp. Content in this space is free 
