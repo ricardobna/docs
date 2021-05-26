@@ -1,10 +1,10 @@
 MicroUI
 =======
 
--  To get started, first we need to add MicroUI, a foundation library
+#. To get started, first we need to add MicroUI, a foundation library
    that provides an abstraction layer to access the low-level UI inputs
    and outputs.
--  Look for module.ivy, and replace dependencies with the following:
+#. Look for module.ivy, and replace dependencies with the following:
 
    .. code:: xml
 
@@ -18,7 +18,7 @@ MicroUI
        the MicroUI library, it will be automatically resolved with the
        correct version.
 
--  This call initializes the MicroUI framework and starts the UI Thread,
+#. This call initializes the MicroUI framework and starts the UI Thread,
    which manages the user input and display events.
 
    .. code:: java
@@ -30,18 +30,18 @@ MicroUI
 
      MicroUI have to be started before any UI operations
 
--  To run your code on the simulator, left click on the Project Go To
+#. To run your code on the simulator, left click on the Project Go To
    **Run>Run As>MicroEJ Application> Select the device you added**
    |image0|
 
 Widgets
 -------
 
--  The widget library provides a collection of common widgets and
+#. The widget library provides a collection of common widgets and
    containers. It is based on MWT, a base library that defines core
    types graphical elements for designing rich graphical user interface
    embedded applications.
--  Look for module.ivy, and replace dependencies with the following:
+#. Look for module.ivy, and replace dependencies with the following:
 
    .. code:: xml
 
@@ -58,10 +58,10 @@ Widgets
 Desktop
 -------
 
--  A desktop is the top-level object that can be displayed on a Display.
+#. A desktop is the top-level object that can be displayed on a Display.
    It may contain only a single widget, and at most one desktop is shown
    on a Display at any given time.
--  Desktop automatically triggers the layout and rendering phases for
+#. Desktop automatically triggers the layout and rendering phases for
    itself and its children.
 
    .. code:: java
@@ -76,7 +76,7 @@ Desktop
 Displaying a Label
 ------------------
 
--  To add a label, just instantiate a Label object and add it to the
+#. To add a label, just instantiate a ´´Label`` object and add it to the
    desktop as the root widget.
 
    .. code:: java
@@ -91,7 +91,7 @@ Displaying a Label
         desktop.requestShow();
     }
 
-- To run the code go to the **Main.java** file and right click it, hover over Run As and select MicroEJ Application
+#.To run the code go to the **Main.java** file and right click it, hover over Run As and select MicroEJ Application
 
    |image2|
 

@@ -13,27 +13,25 @@ name images, the Structure should look like this:
 
     /images/mj.png:ARGB4444
 
--  The declaration in the .list file is used in the following format
+-  The image declaration in the .list file follows this pattern:
 
 .. code::
 
     path:format
 
--  The path is relative to the resources folder
--  The format is used to specify on what format will be embedded into
-   the application
+-  ``path`` is the path to the image file, relative to the ``resources`` folder.
+-  ``format`` specifies how the image will be embedded in the application.
 
 Displaying an image
 -------------------
 
--  to add this image first create and instance of Image widget with the
-   path to the image you created
+- To display this image, first create an instance of the widget ``ImageWidget``, specifying the path to the image in the consructor:
 
    .. code:: java
 
        ImageWidget image = new ImageWidget("/images/mj.png");
 
--  Then, you add a child to the canvas made in Step 3
+- Add the widget to the canvas container by adding this line to the ``main`` of your application:
 
    .. code:: java
 

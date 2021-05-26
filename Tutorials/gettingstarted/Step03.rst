@@ -11,11 +11,12 @@ Style
    
    .. note::
     Some of the attributes are inspired by CSS, like Background,Border, Color, Dimension, Font, Alignment,Margin/Padding
+    not only that, but also the CascadingStylesheet with the cascading algorithms,selectors and etc
 
 Selectors
 ---------
 
--  Define the widget which the style is going to be applied
+-  Selectors determine the widget to which a style applies. There are three main types of selectors:
 
    -  Simple selectors (based on type,Class)
    -  Combinators (base on relationships)
@@ -44,8 +45,7 @@ Usage
        style.setColor(Colors.RED);
        style.setBorder(new RectangularBorder(Colors.BLACK, 1));
 
--  For these options to take effect, the desktop must have its
-   stylesheet set.
+-  For these options to take effect, bind the stylesheet to the desktop.
 
    .. code:: java
 
@@ -65,12 +65,12 @@ Usage
          canvas.addChild(label, 0, 0, Widget.NO_CONSTRAINT, Widget.NO_CONSTRAINT);
          canvas.addChild(label2, 0, 15, Widget.NO_CONSTRAINT, Widget.NO_CONSTRAINT);
 
-         CascadingStylesheet css = new CascadingStylesheet();
+         CascadingStylesheet stylesheet = new CascadingStylesheet();
          EditableStyle style = css.getSelectorStyle(new TypeSelector(Label.class));
          style.setColor(Colors.RED);
          style.setBorder(new RectangularBorder(Colors.BLACK, 1));
 
-         desktop.setStylesheet(css);
+         desktop.setStylesheet(stylesheet);
          desktop.setWidget(canvas);
          desktop.requestShow();
       }
@@ -80,8 +80,7 @@ Usage
 Padding and Margin
 ~~~~~~~~~~~~~~~~~~
 
--  Using margin and padding its pretty simple, Adding padding to the
-   Device is just like
+-  Using margin and padding its pretty simple, Adding margin and padding to widget is just like
 
    .. code:: java
 

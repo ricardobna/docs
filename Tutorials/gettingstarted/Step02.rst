@@ -1,5 +1,5 @@
-Layout
-======
+Using Layouts
+=============
 
 -  The lay out process determines the position and size of the widgets.
 -  It depends on:
@@ -11,31 +11,29 @@ Layout
    -  This process is started automatically when the Desktop is shown.
       It can also be triggered programmatically.
 
-Flow Layout
------------
+Using Flow Layout
+-------------------
 
 -  Flow layout: lays out any number of children horizontally or
-   vertically, using multiple rows if necessary deppending on the size
-   of each added widget 
+   vertically, using multiple rows if necessary depending on the size
+   of each child widget 
 
    |image0|
 
 -  Creating a Flow Layout
--  Instead of adding directly to the desktop, first, you Create a flow
-   container, and then add everything to this flow container, and then,
-   add to the Desktop
-
+-  First, instantiate a ``Flow`` container, then add two ``Label`` objets to this container. 
+-  Finally, add the ``Flow`` container to the ``Desktop``.
    .. code:: java
 
       public static void main(String[] args) {
          MicroUI.start();
          Desktop desktop = new Desktop();
          Label label = new Label("Hello World");
-         Label label2 = new Label("Hello World 2");
+         Label secondLabel = new Label("Hello World 2");
 
          Flow flowContainer = new Flow(LayoutOrientation.HORIZONTAL);
          flowContainer.addChild(label);
-         flowContainer.addChild(label2);
+         flowContainer.addChild(secondLabel);
 
          desktop.setWidget(flowContainer);
          desktop.requestShow();
@@ -44,12 +42,13 @@ Flow Layout
 -  Both of the labels will share half of the screen 
 
    |image1|
+
    
 Canvas
 ------
 
-Lays out any number of children freely
--  To use canvas, just add the widget, and it's position on the screen, it's width and length
+- Lays out any number of children freely.
+- To add a widget to a ``Canvas``, specify it's position and size.
 
    .. note::
 

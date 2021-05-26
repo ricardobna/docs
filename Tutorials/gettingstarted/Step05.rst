@@ -4,30 +4,28 @@ Advanced Styling
 Imaging with stylesheets
 ------------------------
 
--  It's possible to set images as styles, using on a button for example
--  Since we are going to set the image as background on only one button,
-   We need to use a class select, which it's an Integer that relates to
-   the Button
+-  -  Let's add a button to the application, with the MicroEJ logo as background.
+-  -  Since this background will apply to a specific button, introduce a new class selector that will select this button.
 
 Class Selector
 --------------
 
 -  Just like a class on CSS, it associates to every element that are
    from the same class
--  Creating a class for button for example
+-  Define a class for the button as follows:
 
    .. code:: java
 
        private static final int BUTTON = 600;
 
--  Then, after creating the button, we can associate this 'Class' to it
+- Bind the class ``BUTTON`` to the button widget.
 
    .. code:: java
 
        Button button = new Button("Click ME");
        button.addClassSelector(BUTTON);
 
--  Then, we can edit the style associated with this class
+- Retrieve the style for this class from the stylesheet and edit the attributes:
 
    .. code:: java
 
