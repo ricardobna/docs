@@ -19,6 +19,9 @@ Getting Started
    Step10
    Step11
    Step12
+   Step13
+   Step14
+   Step15
 
 ..
    | Copyright 2008-2020, MicroEJ Corp. Content in this space is free 

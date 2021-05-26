@@ -75,14 +75,17 @@ Using with Animator
     public static void main(String[] args) {
         MicroUI.start();
         Desktop desktop = new Desktop();
-        MyProgressBarWidget pb = new MyProgressBarWidget();
+        final MyProgressBarWidget pb = new MyProgressBarWidget();
         Flow flow = new Flow(LayoutOrientation.VERTICAL);
         flow.addChild(pb);
 
         Animation progressBarAnimation = new Animation() {
+
+            float progress = 0.3f;
+
             @Override
             public boolean tick(long currentTimeMillis) {
-                pb.setProgress(progress += 0.001f);
+                pb.setProgress(this.progress += 0.001f);
                 pb.requestRender();
                 return true;
             }

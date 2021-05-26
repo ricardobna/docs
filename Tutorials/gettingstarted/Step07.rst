@@ -72,7 +72,8 @@ Drawing Thick Shapes
        g.setColor(Colors.YELLOW);
        ShapePainter.drawThickFadedLine(g, 20, 20, 100, 80, 10, 6, Cap.ROUNDED, Cap.PERPENDICULAR);
 
-       // draws a thick green circle. g.setColor(Colors.GREEN);
+       // draws a thick green circle.
+       g.setColor(Colors.GREEN);
        ShapePainter.drawThickFadedCircle(g, 130, 20, 100, 20, 2);
 
    |image3|

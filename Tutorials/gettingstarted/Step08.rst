@@ -4,7 +4,6 @@ Animation
 -  To use animation, the Animation class is going to be used
 -  The main goal with animation is to set the widget graphics in motion
    to make the GUI more appealing and more lively 
-   |image0|
 
 Usage
 -----
@@ -28,7 +27,7 @@ Usage
 
 - The code above updates the label text everytime it's called
 
-|image1| 
+|image0| 
 
 - The final code should look like this
 
@@ -37,15 +36,18 @@ Usage
     public static void main(String[] args) {
         MicroUI.start();
         Desktop desktop = new Desktop();
-        Label label = new Label("hello");
+        final Label label = new Label("hello");
 
         Flow flow = new Flow(LayoutOrientation.VERTICAL);
         flow.addChild(label);
 
         Animation lblAnimation = new Animation() {
+
+            int tick = 0;
+
             @Override
             public boolean tick(long currentTimeMillis) {
-                label.setText(Integer.toString(tick++));
+                label.setText(Integer.toString(this.tick++));
                 label.requestRender();
                 return true;
             }
@@ -56,5 +58,4 @@ Usage
         desktop.requestShow();
     }
 
-.. |image0| image:: animationclass.png
-.. |image1| image:: ticking.png
+.. |image0| image:: ticking.png

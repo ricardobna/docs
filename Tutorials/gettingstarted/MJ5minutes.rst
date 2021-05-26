@@ -41,14 +41,18 @@ Start the IDE for the first time
 Prepare platform sources
 ------------------------
 
--  Download and unzip the platform sources for [GCC] or [IAR].
--  Select File > Import > MicroEJ > Architectures and click on Next> and
+-  Download and unzip the platform sources for 
+
+   - `GCC <https://repository.microej.com/packages/referenceimplementations/M5QNX/1.2.0/STM32F7508-M5QNX-fullPackaging-eval-1.2.0.zip>`__
+   - `IAR <https://repository.microej.com/packages/referenceimplementations/KUVW3/1.2.0/STM32F7508-KUVW3-fullPackaging-eval-1.2.0.zip>`__
+
+-  Select ``File > Import > MicroEJ > Architectures`` and click on Next> and
    choose the directory platformArchitecture inside the unarchived
    folder, Read the license of the targets, and then click **Finish**.
 
    |image0|
 
--  Select Window > Preferences > MicroEJ > Architectures and click on
+-  Select ``Window > Preferences > MicroEJ > Architectures`` and click on
    Import..., find the previously extracted folder and select the
    MicroEJ Architecture directory. 
 
@@ -58,7 +62,7 @@ Prepare platform sources
    
    |image1|
 
--  Select the **File > Import > General > Existing Projects** into
+-  Select the ``File > Import > General > Existing Projects`` into
    Workspace and click on **Archive** and browse for the previously
    extracted folder to locate the **MicroEJ Platform Reference
    Implementation file(e.g. [board]-[uid]-platformSource.zip)** and
@@ -69,13 +73,11 @@ Prepare platform sources
 Create your license
 -------------------
 
--  Go to license.microej.com and create a new account.
+-  Go to `license.microej.com <https://license.microej.com>`__ and create a new account.
 -  After receiving the confirmation e-mail, login to your account and
    click on Activate a License.
 -  Set Product P/N: to 9PEVNLDBU6IJ.
--  To get your UID from the MicroEJ SDK, select Window > Preferences >
-   MicroEJ > Architectures menu, click on one of the available
-   architectures and press Get UID. 
+-  To get your UID from the MicroEJ SDK, select ``Window > Preferences > MicroEJ > Architectures`` menu, click on one of the available architectures and press Get UID. 
    
    |image3|
 
@@ -89,7 +91,7 @@ Create your license
 Activate your license
 ---------------------
 
--  Back to MICROEJ SDK, select the Window > Preferences > MicroEJ menu
+-  Back to MICROEJ SDK, select the ``Window > Preferences > MicroEJ`` menu
    and press Add... to select the downloaded activation key archive
    file.
 -  Go to Architectures sub-menu and check that all architectures are now
@@ -109,7 +111,7 @@ Build Your Platform
 Create a New Project
 --------------------
 
--  First, Go to **File > New > Standalone Project** 
+-  First, Go to ``File > New > Standalone Project``
 
    |image6|
 

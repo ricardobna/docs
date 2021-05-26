@@ -5,14 +5,14 @@ Fonts
    ej.microui.display.Font.getFont(). To be displayed, these fonts have
    to be converted at build-time from their source format to the display
    raw format by the font generator tool.
--  Fonts, just like images, must be declared at the \*.fonts.list 
+-  Fonts, just like images, must be declared at the \yourapp.fonts.list 
 
 Creating a font
 ---------------
 
 -  To create a font, go to the package you want to store your fonts,
    Normally **Resources-> fonts**
--  Then **Left-Click->new->Other->MicroEJ->MicroEJ Font**
+-  Then **Right-Click->New->Other->MicroEJ->MicroEJ Font**
 
 |image4| 
 
@@ -27,13 +27,21 @@ Creating a font
 .. note::
  It's important to have the font that you want already installed at the system
 
-- If you are using a latin based alphabet, just left the settings as they are and click finish
+- To choose what font you'll use you click on **Import...** and this should open
 
-|image2| 
+|image5|
 
-- Click finish, and the font should be imported in the .ejf file
+- Here you'll click on **Next** and then you'll select the font you want to use as shown below
 
--  Then just add the font to the \*.font.list file
+|image6|
+
+.. note::
+
+   If you are using a latin based alphabet, just leave the settings as they are and click finish
+
+- Click finish and save the file, and the font should be imported in the .ejf file
+
+-  Then just add the font to the \yourapp.font.list file
 
    .. code::
 
@@ -46,12 +54,25 @@ Adding the font to a Label
 
 .. code:: java
 
-   Label l = new Label("Hello World");
-   l.addClassSelector(BUTTON);
-   Font font = Font.getFont("/fonts/NewFont.ejf");
-   CascadingStylesheet css = new CascadingStylesheet();
-   EditableStyle style = css.getSelectorStyle(new ClassSelector(BUTTON));
-   style.setFont(font);
+   public class Main {
+      private static final int BUTTON = 600;
+
+      public static void main(String[] args) {
+         MicroUI.start();
+         Desktop desktop = new Desktop();
+         Flow flow = new Flow(LayoutOrientation.VERTICAL);
+         Label l = new Label("Hello World");
+         l.addClassSelector(BUTTON);
+         Font font = Font.getFont("/fonts/NewFont.ejf");
+         CascadingStylesheet css = new CascadingStylesheet();
+         EditableStyle style = css.getSelectorStyle(new ClassSelector(BUTTON));
+         flow.addChild(l);
+         style.setFont(font);
+         desktop.setStylesheet(css);
+         desktop.setWidget(flow);
+         desktop.requestShow();
+      }
+   }
 
 .. note::
    Don't forget to add the Style to the Desktop
@@ -66,3 +87,5 @@ Adding the font to a Label
 .. |image2| image:: selectsysfont.PNG
 .. |image3| image:: font.png
 .. |image4| image:: microejfont.PNG
+.. |image5| image:: importfonts1.png
+.. |image6| image:: importfonts2.png

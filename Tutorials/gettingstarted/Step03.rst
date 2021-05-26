@@ -55,25 +55,25 @@ Usage
 
    .. code:: java
 
-       public static void main(String[] args) {
-           MicroUI.start();
-           Desktop desktop = new Desktop();
-           Label label = new Label("Hello World");
-           Label label2 = new Label("Hello World 2");
+      public static void main(String[] args) {
+         MicroUI.start();
+         Desktop desktop = new Desktop();
+         Label label = new Label("Hello World");
+         Label label2 = new Label("Hello World 2");
 
-       Canvas canvas = new Canvas();
-       canvas.addChild(label, 0, 0, Widget.NO_CONSTRAINT, Widget.NO_CONSTRAINT);
-       canvas.addChild(label2, 0, 15, Widget.NO_CONSTRAINT, Widget.NO_CONSTRAINT);
+         Canvas canvas = new Canvas();
+         canvas.addChild(label, 0, 0, Widget.NO_CONSTRAINT, Widget.NO_CONSTRAINT);
+         canvas.addChild(label2, 0, 15, Widget.NO_CONSTRAINT, Widget.NO_CONSTRAINT);
 
-       CascadingStylesheet css = new CascadingStylesheet();
-       EditableStyle style = css.getSelectorStyle(new TypeSelector(Label.class));
-       style.setColor(Colors.RED);
-       style.setBorder(new RectangularBorder(Colors.BLACK, 1));
+         CascadingStylesheet css = new CascadingStylesheet();
+         EditableStyle style = css.getSelectorStyle(new TypeSelector(Label.class));
+         style.setColor(Colors.RED);
+         style.setBorder(new RectangularBorder(Colors.BLACK, 1));
 
-       desktop.setStylesheet(css);
-       desktop.setWidget(canvas);
-       desktop.requestShow();
-       }
+         desktop.setStylesheet(css);
+         desktop.setWidget(canvas);
+         desktop.requestShow();
+      }
 
    |image2| 
 

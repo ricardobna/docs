@@ -9,7 +9,7 @@ MicroUI
    .. code:: xml
 
        <dependencies>
-           <dependency org="ej.api" name="microui" rev="3.0.3"/>       
+           <dependency org="ej.api" name="microui" rev="3.0.3"/>
        </dependencies>
 
    .. note::
@@ -46,7 +46,7 @@ Widgets
    .. code:: xml
 
        <dependencies>
-           <dependency org="ej.library.ui" name="widget" rev="3.1.1" />
+           <dependency org="ej.library.ui" name="widget" rev="4.0.0" />
        </dependencies>
 
    .. note::
@@ -91,8 +91,13 @@ Displaying a Label
         desktop.requestShow();
     }
 
+- To run the code go to the **Main.java** file and right click it, hover over Run As and select MicroEJ Application
+
+   |image2|
+
    |image1|
 
 
 .. |image0| image:: simulator.png
 .. |image1| image:: hello.png
+.. |image2| image:: runapplication.png
