@@ -4,24 +4,18 @@ Start your first MicroEJ GUI application in 15 Minutes
 Prerequisites
 -------------
 
-#.  Supported Operating System: MICROEJ SDK runs on the following
-   operating systems: Windows (7, 8, 8.1, 10), Linux, macOS.
-
-#. A Java™ Runtime Environment 8 is needed on your host computer for
+-  Supported Operating System: MICROEJ SDK runs on the following operating systems: Windows (7, 8, 8.1, 10), Linux, macOS.
+-  
+- A Java™ Runtime Environment 8 is needed on your host computer for
    running MICROEJ SDK. [Download Java™ Runtime Environments]
 
 Download and Install
 --------------------
 
-#.  Download the installer package corresponding to your host computer OS
-   `MicroEJ
-   SDK <https://repository.microej.com/packages/SDK/21.03/MicroEJ-SDK-Installer-Win64-21.03.exe>`__
-#.  Unzip the downloaded installer package, if needed and execute the
-   installer.
+#.  Download the installer package corresponding to your host computer OS `MicroEJ SDK <https://repository.microej.com/packages/SDK/21.03/MicroEJ-SDK-Installer-Win64-21.03.exe>`__
 
-   .. note::
+#.  Unzip the downloaded installer package, if needed and execute the installer.
 
-      ℹ️ On Windows, accept the administrator privileges elevation
 
 Start the IDE for the first time
 --------------------------------
@@ -44,8 +38,8 @@ Prepare platform sources
 
 #. Download and unzip the platform sources for 
 
-   #.`GCC <https://repository.microej.com/packages/referenceimplementations/M5QNX/1.2.0/STM32F7508-M5QNX-fullPackaging-eval-1.2.0.zip>`__
-   #.`IAR <https://repository.microej.com/packages/referenceimplementations/KUVW3/1.2.0/STM32F7508-KUVW3-fullPackaging-eval-1.2.0.zip>`__
+   - `GCC <https://repository.microej.com/packages/referenceimplementations/M5QNX/1.2.0/STM32F7508-M5QNX-fullPackaging-eval-1.2.0.zip>`__
+   - `IAR <https://repository.microej.com/packages/referenceimplementations/KUVW3/1.2.0/STM32F7508-KUVW3-fullPackaging-eval-1.2.0.zip>`__
 
 #. Select ``File > Import > MicroEJ > Architectures`` and click on Next> and
    choose the directory platformArchitecture inside the unarchived
