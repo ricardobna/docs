@@ -22,7 +22,7 @@ Getting Started
    Step13
    Step14
    Step15
-   Step16
+   step16
 
 ..
    | Copyright 2008-2020, MicroEJ Corp. Content in this space is free 

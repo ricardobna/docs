@@ -35,7 +35,7 @@ Using the Pop Up
     });
     popup.setWidget(b);
     popup.requestShow();
-}
+    }
 
 
 - First, create a main desktop, and then, create the popup and show it with it's widget
@@ -85,8 +85,7 @@ The popup code
             }
         }
     }
-    return super.handleEvent(event);
-}
+    return super.handleEvent(event);}
 
 - both methods for requesting show and hide are implemented like this 
 
