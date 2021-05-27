@@ -28,7 +28,6 @@ Using the Pop Up
     Popup popup = new Popup();
     Button b = new Button("TESTE");
     b.setOnClickListener(new OnClickListener() {
-
         @Override
         public void onClick() {
             System.out.println("Print this");
@@ -36,8 +35,9 @@ Using the Pop Up
     });
     popup.setWidget(b);
     popup.requestShow();
-
 }
+
+
 - First, create a main desktop, and then, create the popup and show it with it's widget
 
 |openPopup|
@@ -85,7 +85,6 @@ The popup code
             }
         }
     }
-
     return super.handleEvent(event);
 }
 
@@ -159,7 +158,7 @@ The popup code
             desktop.renderWidget(g, widget);
         }
     }
-}
+
 
 
 .. |openPopup| image:: openPopup.PNG
