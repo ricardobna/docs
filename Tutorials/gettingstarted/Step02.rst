@@ -23,6 +23,7 @@ Using Flow Layout
 -  Creating a Flow Layout
 -  First, instantiate a ``Flow`` container, then add two ``Label`` objets to this container. 
 -  Finally, add the ``Flow`` container to the ``Desktop``.
+
    .. code:: java
 
       public static void main(String[] args) {

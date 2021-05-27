@@ -1,5 +1,5 @@
 Event Handling
-=============
+==============
 
 The handleEvent method
 ---------------------------
@@ -33,14 +33,15 @@ The handleEvent method
 
 - It's important to know that the widget should be setEnabled(true) in order to events to work
 - The handleClick method is where the clickListener is used
+
 .. code:: java
  
     public void handleClick() {
-    OnClickListener listener = this.onClickListener;
-    if (listener != null) {
-        listener.onClick();
+        OnClickListener listener = this.onClickListener;
+        if (listener != null) {
+            listener.onClick();
+        }
     }
-}
 
 
 Using events with buttons
