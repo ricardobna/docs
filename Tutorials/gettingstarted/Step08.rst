@@ -8,10 +8,10 @@ Animation
 Usage
 -----
 
--  Using Animation is easy, Just Override the method tick() in the
+-  Using Animation is easy, just override the method tick() in the
    Animator class
--  Everytime the method is called, the widget should be re-rendered, or
-   Else, it's not going to show 
+-  Every time the method is called on, the widget should be re-rendered, or
+   else, it is not going to show 
    
    .. code:: java 
    
@@ -25,7 +25,7 @@ Usage
     Animator animator = new Animator();
     animator.startAnimation(lblAnimation); 
 
-- The code above updates the label text everytime it's called
+- The code above updates the label text everytime it is called
 
 |image0| 
 

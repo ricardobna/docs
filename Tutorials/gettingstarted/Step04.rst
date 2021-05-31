@@ -2,8 +2,8 @@ Images
 ======
 
 To display an image, you must first add it to the resource list file.
-Create two packages on the Resources folder, one named list, and another
-name images, the Structure should look like this:
+Create two packages on the Resources folder, one named list and another
+named images. The structure should look like this:
 
 |image0| 
 
@@ -25,7 +25,7 @@ name images, the Structure should look like this:
 Displaying an image
 -------------------
 
-- To display this image, first create an instance of the widget ``ImageWidget``, specifying the path to the image in the consructor:
+- To display this image, first create an instance of the widget ``ImageWidget``, specifying the path to the image in the constructor:
 
    .. code:: java
 

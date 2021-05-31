@@ -7,7 +7,7 @@ Menu
 Menu Items
 ----------
 
-- First you will need to have a class that represents the items you will show, this class should be responsible for receiving the click event used for transition to the other parts of your app and also have a title to indicate what it is.
+- First you will need to have a class that represents the items you will show. This class should be responsible for receiving the click event used for transition to the other parts of your app and should also have a title to indicate what it is.
 
 .. code:: java
 
@@ -93,7 +93,7 @@ Menu Items
     }
 
 .. note::
-    ``Page`` and ``ScrollableList`` are components created for this tutorial, all the code used to create them are available on the `Demo Widget github <https://github.com/MicroEJ/Demo-Widget/>`__
+    ``Page`` and ``ScrollableList`` are components created for this tutorial. All the code used to create them are available on the `Demo Widget github <https://github.com/MicroEJ/Demo-Widget/>`__
 
 - With this you now have a component that can be used as a Menu to allow the user to navigate on your app.
 

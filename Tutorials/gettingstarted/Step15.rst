@@ -1,13 +1,13 @@
 Transitions
 ===========
 
-- All apps need some animation, be it on its components or when changing screens. We have already shown you how to create animations, on this step you will learn how to make screen transition animation.
+- All apps need some animation, be it on its components or when changing screens. In this step you will learn how to make screen transition animations.
 - All the code needed for this tutorial can be found `here <link>`__.
 
 Motion
 ------
 
-- The most important thing for the transition is the motion, it is responsible for calculating how the animation will be made, there are various Motion functions, but on this transition we are using the ``QuadEaseOutFunction``
+- The most important thing for the transition is the motion, it is responsible for calculating how the animation will be made, there are various Motion functions, but in this transition we are using the ``QuadEaseOutFunction``
 
 .. code:: java
 
@@ -20,8 +20,8 @@ Motion
         }
     }
 
-- On this case we are using the motion function QuadEaseOut to calculate where the X will be at each given frame when it's going foward - from the width of the screen to the start of the screen - or backwards, which inverts the starting and ending points.
-- After creating the motion you will need to make sure the result from the motion is update on the screen to where you want it to, this can be made by overwriting the tick method and using it's ``value`` to set the position of the ``Desktop``.
+- In this case we are using the motion function QuadEaseOut to calculate where the X will be at each given frame when it is moving foward - from the width of the screen to the start of the screen - or backwards, which inverts the starting and ending points.
+- After creating the motion you will need to make sure that the result from the motion is updated on the screen to where you want it to be. This can be made by overwriting the tick method and using its ``value`` to set the position of the ``Desktop``.
 
 .. code:: java
 

@@ -10,7 +10,7 @@ Imaging with stylesheets
 Class Selector
 --------------
 
--  Just like a class on CSS, it associates to every element that are
+-  Just like a class on CSS, it associates to every element that is
    from the same class
 -  Define a class for the button as follows:
 
@@ -37,7 +37,7 @@ Class Selector
 
        style.setBackground(new ImageBackground(Image.getImage("/images/mj.png")));
 
-   And the result should be this one
+   And the result should be as follows
 
    .. code:: java
 
@@ -68,7 +68,7 @@ Class Selector
 Combinator and Conditional style
 --------------------------------
 
--  It's possible to combine two or more Classes using a combinator
+-  It is possible to combine two or more Classes using a combinator
 -  In this example the active state of the Button will turn the text red
 
    .. code:: java
@@ -81,7 +81,7 @@ Combinator and Conditional style
        EditableStyle styleActive = css.getSelectorStyle(new AndCombinator(imageButton, activeSelector));
        styleActive.setColor(Colors.RED);  
 
-- Instead of directly instantiating classSelector in the get selector style, The ClassSelector has been exposed to be combined with the ButtonActive selector
+- Instead of directly instantiating classSelector in the get selector style, the ClassSelector has been exposed to be combined with the ButtonActive selector
 
     |image1|
 

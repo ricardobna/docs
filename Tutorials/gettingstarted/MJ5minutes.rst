@@ -4,34 +4,32 @@ Start your first MicroEJ GUI application in 15 Minutes
 Prerequisites
 -------------
 
--  Supported Operating System: MICROEJ SDK runs on the following operating systems: Windows (7, 8, 8.1, 10), Linux, macOS.
--  
-- A Java™ Runtime Environment 8 is needed on your host computer for
-   running MICROEJ SDK. [Download Java™ Runtime Environments]
+- Supported Operating System: MICROEJ SDK runs on the following operating systems: Windows (7, 8, 8.1, 10), Linux, macOS.
+- A Java™ Runtime Environment 8 is needed on your host computer for running MICROEJ SDK 21.03. [Download Java™ Runtime Environments]
 
 Download and Install
 --------------------
 
 #.  Download the installer package corresponding to your host computer OS `MicroEJ SDK <https://repository.microej.com/packages/SDK/21.03/MicroEJ-SDK-Installer-Win64-21.03.exe>`__
 
-#.  Unzip the downloaded installer package, if needed and execute the installer.
+#.  Unzip the downloaded installer package if needed and execute the installer.
 
 
 Start the IDE for the first time
 --------------------------------
 
-#. Start MICROEJ SDK and select a workspace. 
+#. Start MicroEJ SDK and select a workspace. 
 
    .. note::
 
-      ℹ️ If you are not familiar with Eclipse workspaces, select the default one and press OK.
+      If you are not familiar with Eclipse workspaces, select the default and press OK.
    
-#. Select the MicroEJ repository where to import MicroEJ architectures
+#. Select the MicroEJ repository to import MicroEJ architectures
    from. 
 
    .. note::
 
-      ℹ️ If you are not familiar with MicroEJ repositories, select the default one and press OK.
+      If you are not familiar with MicroEJ repositories, select the default and press OK.
 
 Prepare platform sources
 ------------------------
@@ -41,9 +39,9 @@ Prepare platform sources
    - `GCC <https://repository.microej.com/packages/referenceimplementations/M5QNX/1.2.0/STM32F7508-M5QNX-fullPackaging-eval-1.2.0.zip>`__
    - `IAR <https://repository.microej.com/packages/referenceimplementations/KUVW3/1.2.0/STM32F7508-KUVW3-fullPackaging-eval-1.2.0.zip>`__
 
-#. Select ``File > Import > MicroEJ > Architectures`` and click on Next> and
-   choose the directory platformArchitecture inside the unarchived
-   folder, Read the license of the targets, and then click **Finish**.
+#. Select ``File > Import > MicroEJ > Architectures`` click on ``Next>`` and
+   choose the directory ``platformArchitecture`` inside the unzipped
+   folder read the license of the targets, and then click **Finish**.
 
    |image0|
 
@@ -53,14 +51,14 @@ Prepare platform sources
 
    .. note::
 
-      ℹ️ There will be an X on architecture, this will be adressed soon 
+      There will be an X on architecture, this issue will be addressed soon 
    
    |image1|
 
 #. Select the :guilabel:File > :guilabel:Import > :guilabel:General > :guilabel:Existing Projects into
-   Workspace and click on :guilabel:`Select archive file` and browse for the previously
+   Workspace click on :guilabel:`Select archive file` and browse for the previously
    extracted folder to locate the **MicroEJ Platform Reference
-   Implementation file(e.g.STM32F7508-KUVW3-platformSource.zip)** and
+   Implementation file(e.g.STM32F7508-KUVW3-platformSource.zip)** then
    import all available Eclipse projects,and then click **Finish**
 
    |image2|
@@ -81,12 +79,12 @@ Create your license
 
    .. note::
    
-      ℹ️ You should receive your activation key by email in less than 5 minutes. If not, please contact support@microej.com.
+      You should receive your activation key by email in less than 5 minutes. If not, please contact support@microej.com.
 
 Activate your license
 ---------------------
 
-#. Back to MicroEJ SDK, select the ``Window > Preferences > MicroEJ`` menu
+#. Back in MicroEJ SDK, select the ``Window > Preferences > MicroEJ`` menu
    and press Add... to select the downloaded activation key archive
    file.
 #. Go to Architectures sub-menu and check that all architectures are now
@@ -103,7 +101,7 @@ Build Your Platform
    
    |image5|
 
-#. The message should print show build succesful 
+#. The message should say build successful
 
 Create a New Project
 --------------------
@@ -119,7 +117,7 @@ Create a New Project
 Featured project #.Demo Widget
 ------------------------------
 
-#. instructions to download import and launch Demo Widget 
+- instructions to download import and launch Demo Widget 
 
    |image8|
 

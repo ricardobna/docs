@@ -6,7 +6,7 @@ Creating Widgets
 -  In this example, you are going to create a simple progress bar
 
 .. note::
-    The computeContentOptimalSize and renderContent methods should be overriden
+    The computeContentOptimalSize and renderContent methods should be overridden
 
     .. code:: java
 
@@ -33,14 +33,14 @@ Setting up
            size.setSize(200,50);
        }
 
--  Then, let's create the progress bar, first, it's important to add a
+-  Then, let's create the progress bar, first, it is important to add a
    Progress value
 
    .. code:: java
 
        private float progressValue = 0.3f;
 
--  Then, let's implement the renderContent method
+-  Now, let's implement the renderContent method
 
    .. code:: java
 
@@ -67,7 +67,7 @@ Setting up
 Using with Animator
 -------------------
 
--  Using the code made in Step 8, doing the modifications below,it's
+-  Using the code made in Step 8, doing the modifications below, it is
    possible to see the progress bar animated
 
    .. code:: java

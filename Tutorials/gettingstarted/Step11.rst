@@ -4,14 +4,14 @@ Scroll List
 List
 ----
 
--  A list is a Container that resizes each of its child accordingly
+-  A list is a Container that resizes each of its children accordingly
 -  Naturally, It shows some issues if you add too many components
 -  Using as an example the code used before, with the new font, adding
    20 components shows the following result 
 
    |image0|
 
--  Using MicroEJ, it's possible to create a Scrollable List to avoid
+-  Using MicroEJ, it is possible to create a Scrollable List to avoid
    this issue
 
 .. code:: java
@@ -26,7 +26,7 @@ List
 Scrollable List
 ---------------
 
--  It's possible to create our own components, so, for example, it's
+-  It is possible to create our own components, so, for example, it is
    possible to use a Scrollable Container
 -  The full implementation of the class is available at `Widget Demo <https://github.com/MicroEJ/Demo-Widget/tree/master/com.microej.demo.widget/src/main/java/com/microej/demo/widget/scrollablelist/widget>`__
 -  The usage is pretty simple 

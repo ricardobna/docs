@@ -11,7 +11,7 @@ Style
    
    .. note::
     Some of the attributes are inspired by CSS, like Background,Border, Color, Dimension, Font, Alignment,Margin/Padding
-    not only that, but also the CascadingStylesheet with the cascading algorithms,selectors and etc
+    and also the CascadingStylesheet with the cascading algorithms,selectors and etc
 
 Selectors
 ---------
@@ -23,7 +23,7 @@ Selectors
    -  State Selectors (based on state) 
 
    .. note::
-    More of this will be presented at the Advanced Styling step 
+    More of this will be presented in the Advanced Styling step 
 
 Usage
 `````
@@ -80,7 +80,7 @@ Usage
 Padding and Margin
 ~~~~~~~~~~~~~~~~~~
 
--  Using margin and padding its pretty simple, Adding margin and padding to widget is just like
+-  Using margin and padding its pretty simple. Adding margin and padding to widget is as follows
 
    .. code:: java
 

@@ -4,7 +4,7 @@ Creating a Contact List using Scroll List
 Creating the contact widget
 ---------------------------
 
--  As explained in step 9, it's possible to create our own widget by
+-  As explained in step 9, it is possible to create our own widget by
    just extending the Widget class
 -  First, let's create a constructor with all the things that we are
    going to need for this
@@ -16,7 +16,7 @@ Creating the contact widget
         this.img = img;
     }
 
--  Then,Overriding the two abstract methods of Widget
+-  Then, overriding the two abstract methods of Widget
 
 .. code:: java
 
@@ -60,7 +60,7 @@ Creating the contact widget
             list.addChild(new ContactWidget("Label" + i, Image.getImage("/images/mj.png")));
         }
 
-- The class should be
+- The class should be as follows
 
    .. code:: java
    
@@ -102,7 +102,7 @@ Creating the contact widget
     }
 
 
-- And it should look like this
+- And it should look like this:
 
 |image0|
 

@@ -1,7 +1,7 @@
 Basic drawing/Drawing on screen
 ===============================
 
--  It's also possible to have access to a drawable interface using the
+-  It is also possible to have access to a drawable interface using the
    Display object that represents a pixelated version of the Display
 
 .. code:: java
@@ -24,15 +24,14 @@ Basic drawing/Drawing on screen
 
     Display.getDisplay().requestShow(myDisplayable);
 
--  This should draw a line from the coordinates of the display (0,0) and
-   going to (100,50) 
+-  This should draw a line from the coordinates of the display (0,0) going to (100,50) 
    
    |image0|
  
 Geometric objects
 -----------------
 
--  it's possible to also draw geometric objects using Displayable
+-  It is also possible to also draw geometric objects using Displayable
 
    .. code:: java
 
@@ -64,7 +63,7 @@ Images can also be set
 Drawing Thick Shapes
 --------------------
 
--  Drawing thick shapes it's very straight forward 
+-  Drawing thick shapes is very straight forward 
 
    .. code:: java
 

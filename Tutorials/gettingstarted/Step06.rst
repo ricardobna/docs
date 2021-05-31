@@ -4,7 +4,7 @@ Event Handling
 The handleEvent method
 ---------------------------
 - Every class that extends Widget inherits the handleEvent method
-- It's possible to handle events Overriding this class on a created sample
+- It is possible to handle events overriding this class on a created sample
 - Using as a sample the Button class
 
 .. code:: java
@@ -46,9 +46,9 @@ The handleEvent method
 
 Using events with buttons
 -------------------------------
-Events are handled in the same 
+Events are handled in the same way
 
-- Using the code created on the Last Step, it's possible to simply add the onClick Listener
+- Using the code created in the Last Step, it is possible to simply add the onClick Listener
 
 .. code:: java
 

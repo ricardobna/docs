@@ -4,7 +4,7 @@ Using Layouts
 -  The lay out process determines the position and size of the widgets.
 -  It depends on:
 
-   -  the layout of the containers: how are arranged the children within
+   -  the layout of the containers: how the children are arranged within
       the containers.
    -  the widgets content size: the size needed by the widgets for
       optimal display.
@@ -49,7 +49,7 @@ Canvas
 ------
 
 - Lays out any number of children freely.
-- To add a widget to a ``Canvas``, specify it's position and size.
+- To add a widget to a ``Canvas``, specify its position and size.
 
    .. note::
 

@@ -10,28 +10,28 @@ Fonts
 Creating a font
 ---------------
 
--  To create a font, go to the package you want to store your fonts,
+-  To create a font, go to the package you want to store your fonts in,
    Normally **Resources-> fonts**
 -  Then **Right-Click->New->Other->MicroEJ->MicroEJ Font**
 
 |image4| 
 
--  Then,Select the name of the font
+-  Then, select the name of the font
 
 |image0|
 
-- After that, this window should open
+- After that, the following window should open
 
 |image1|
 
 .. note::
- It's important to have the font that you want already installed at the system
+ It is important to have the font that you want installed at the system already
 
-- To choose what font you'll use you click on **Import...** and this should open
+- To choose what font you will use you click on **Import...** and the following should open
 
 |image5|
 
-- Here you'll click on **Next** and then you'll select the font you want to use as shown below
+- Here you will click on **Next** and then select the font you want to use as shown below
 
 |image6|
 
@@ -39,9 +39,9 @@ Creating a font
 
    If you are using a latin based alphabet, just leave the settings as they are and click finish
 
-- Click finish and save the file, and the font should be imported in the .ejf file
+- Click finish and save the file. The font should be imported in the .ejf file
 
--  Then just add the font to the \yourapp.font.list file
+- Then just add the font to the \yourapp.font.list file
 
    .. code::
 

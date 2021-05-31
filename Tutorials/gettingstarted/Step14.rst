@@ -1,9 +1,9 @@
 Expandable Widget
-========================
+================
 
 A simple Expandable Widget
----------------------------
-- To create a expandable widget, let's create a toggle() method to change the direction of the motion(animation)
+--------------------------
+- To create an expandable widget, let's create a toggle() method to change the direction of the motion(animation)
 
 .. code:: java
 
@@ -24,7 +24,7 @@ A simple Expandable Widget
 
 - This method just creates a motion for when it should expand or shrink
 
-- Being an expandable widget, it also should expand or collapse when clicked (simply calling toggle), for that you have to add and event handler to handle the pressed event
+- Being an expandable widget, it should also expand or collapse when clicked (simply calling toggle), for that you have to add and event handler to handle the pressed event
 
 .. code:: java
     
@@ -41,7 +41,7 @@ A simple Expandable Widget
         return super.handleEvent(event);
     }
 
-- To change the size you should override also the ``computeContentOptimalSize`` and change the ``size``
+- To change the size you should also override the ``computeContentOptimalSize`` and change the ``size``
 
 .. code:: java
 
@@ -158,8 +158,8 @@ A simple Expandable Widget
         }
     }
 
-Using the ExpandableWidget with the Scroll list
---------------------------------------------------
+Using the ExpandableWidget with the Scroll List
+-----------------------------------------------
 - To add, simply add the expandable widget to the ScrollList
 
 .. code:: java
@@ -187,7 +187,7 @@ Using the ExpandableWidget with the Scroll list
         desktop.requestShow();
     }
 
-- Also, for viewing purposes, let's set an style for the widget
+- Also, for viewing purposes, let's set a style for the widget
 
 .. code:: java
 

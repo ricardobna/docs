@@ -14,8 +14,8 @@ MicroUI
 
    .. note::
 
-       There's no need for explicitly adding EDC, as a dependency for
-       the MicroUI library, it will be automatically resolved with the
+       There's no need to add EDC as a dependency for
+       the MicroUI library. It will be automatically resolved with the
        correct version.
 
 #. This call initializes the MicroUI framework and starts the UI Thread,
@@ -39,7 +39,7 @@ Widgets
 
 #. The widget library provides a collection of common widgets and
    containers. It is based on MWT, a base library that defines core
-   types graphical elements for designing rich graphical user interface
+   type graphical elements for designing rich graphical user interface
    embedded applications.
 #. Look for module.ivy, and replace dependencies with the following:
 
@@ -51,8 +51,8 @@ Widgets
 
    .. note::
 
-       There's no need for explicitly adding MWT or MicroUI, as both
-       are dependencies for the Widget library, they will be
+       There's no need to add MWT or MicroUI, as both
+       are dependencies for the Widget library. They will be
        automatically resolved with the correct version. 
        
 Desktop
