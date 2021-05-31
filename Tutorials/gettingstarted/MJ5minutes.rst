@@ -60,7 +60,7 @@ Prepare platform sources
 #. Select the :guilabel:File > :guilabel:Import > :guilabel:General > :guilabel:Existing Projects into
    Workspace and click on :guilabel:`Select archive file` and browse for the previously
    extracted folder to locate the **MicroEJ Platform Reference
-   Implementation file(e.g. [board]-[uid]-platformSource.zip)** and
+   Implementation file(e.g.STM32F7508-KUVW3-platformSource.zip)** and
    import all available Eclipse projects,and then click **Finish**
 
    |image2|
@@ -97,7 +97,7 @@ Activate your license
 Build Your Platform
 -------------------
 
-#. Inside the **{PLATFORM}-configuration** project, open the
+#. Inside the **stm32f7508_freertos-configuration** project, open the
    **.platform** File MicroEJ platform configuration file. From this
    MicroEJ platform configuration file, click on the link Build Platform
    

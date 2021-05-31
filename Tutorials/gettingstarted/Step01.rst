@@ -91,7 +91,7 @@ Displaying a Label
         desktop.requestShow();
     }
 
-#.To run the code go to the **Main.java** file and right click it, hover over Run As and select MicroEJ Application
+#. To run the code go to the **Main.java** file and right click it, hover over Run As and select MicroEJ Application
 
    |image2|
 
