@@ -15,6 +15,8 @@ named images. The structure should look like this:
 
 -  The image declaration in the .list file follows this pattern:
 
+.. note:: the ARGB4444 mode was used because the image has a transparency, more info at `Images <https://docs.microej.com/en/latest/ApplicationDeveloperGuide/UI/MicroUI/images.html>`__
+
 .. code::
 
     path:format
